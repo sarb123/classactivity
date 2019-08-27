@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationxml"
+    app:startDestination="@id/deffrag">
+
+    <fragment
+        android:id="@+id/deffrag"
+        android:name="com.example.classactivity.deffrag"
+        android:label="fragment_deffrag"
+        tools:layout="@layout/fragment_deffrag" >
+        <action
+            android:id="@+id/action_deffrag_to_fstfrag"
+            app:destination="@id/fstfrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/fstfrag"
+        android:name="com.example.classactivity.fstfrag"
+        android:label="fragment_fstfrag"
+        tools:layout="@layout/fragment_fstfrag" >
+        <action
+            android:id="@+id/action_fstfrag_to_secfrag"
+            app:destination="@id/secfrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/secfrag"
+        android:name="com.example.classactivity.secfrag"
+        android:label="fragment_secfrag"
+        tools:layout="@layout/fragment_secfrag" />
+</navigation>
